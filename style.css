@@ -1,0 +1,482 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcssここから
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+/* ========================================
+リセットcssここまで
+========================================= */
+
+
+
+/* ========================================
+ボディ用
+========================================= */
+body{
+  font-family:"メイリオ",Meiryo;
+  color:#434343;
+  background-color:#f6f6f6;
+}
+
+a{
+  text-decoration: none;
+  color:#434343;
+}
+
+a:hover{
+  color:#f6ac4d;
+}
+
+/* ========================================
+  クリア用
+========================================= */
+.clear{
+  clear:both;
+}
+
+/* ========================================
+	ヘッダー用
+========================================= */
+header{
+  width:100%;
+  height:77px;
+  border-bottom: 3px solid #f6ac4d;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  padding-top:25px;
+  background-color:#fff;
+}
+#header_inner{
+  width:960px;
+  height:52px;
+  margin:0 auto;
+}
+h1{
+  float:left;
+}
+nav{
+  float:right;
+  font-size:18px;
+  margin-top:30px;
+}
+nav ul li{
+  float:left;
+  border-left:1px dotted #434343;
+  padding-left:20px;
+  margin-left:20px;
+}
+nav ul li:last-child{
+  border-right:1px dotted #434343;
+  padding-right:20px;
+}
+
+/* ========================================
+	ピックアップ用
+========================================= */
+#main_wrapper{
+  width:960px;
+  height:auto;
+  margin:30px auto 0 auto;
+}
+
+
+#top_pickup{
+  background-color:#fff;
+  width:580px;
+  height:358px;
+  float:left;
+  margin-right:30px;
+  border:1px solid #dcdddf;
+  position: relative;
+}
+p#pickup_thumb{
+  height:256px;
+  width:580px;
+}
+#pickup_thumb #pickup_tag{
+  position: absolute;
+  top:0;
+  right:0;
+  background-color:rgba(246,172,77,0.9);
+  padding :0 10px;
+  color:#fff;
+  height:32px;
+  line-height:32px;
+  font-size:14px;
+}
+
+#top_pickup dl{
+  padding:15px 20px;
+}
+
+#top_pickup dl dt a{
+  font-size:18px;
+  font-weight:bold;
+}
+#top_pickup dl dd{
+  font-size:12px;
+  font-weight:bold;
+  color:#dcdddf;
+}
+
+
+
+
+
+/* ========================================
+	ランキング用
+========================================= */
+#top_ranking{
+  width:348px;
+  height:360px;
+  float:left;
+}
+
+#top_ranking h2{
+  font-size:18px;
+  font-weight:bold;
+  border-bottom:1px solid #dcdddf;
+  background:url(images/popular_icon.png) no-repeat;
+  padding-left:37px;
+  height:30px;
+}
+
+#top_ranking ul li{
+  width:348px;
+  height:55px;
+  border-bottom:1px dotted #dcdddf;
+  margin-top:15px;
+  padding-bottom:15px;
+}
+#top_ranking ul li:last-child{
+  border-bottom: none;
+  padding-bottom:0;
+}
+
+
+#top_ranking ul li dl dd h3{
+  font-size:15px;
+}
+
+#top_ranking ul li dl dt{
+  float:left;
+  width:89px;
+  height:55px;
+  margin-right:10px;
+  position: relative;
+}
+
+span.ranking_number{
+  font-size:12px;
+  font-weight:bold;
+  color:#fff;
+  background-color: #434343;
+  border:1px solid #fff;
+  position: absolute;
+  width:19px;
+  height:19px;
+  display:inline-block;
+  text-align: center;
+  line-height:19px;
+  top:0;
+  left:0;
+}
+
+#top_ranking ul li dl dd{
+  float:left;
+  width:auto;
+  height:55px;
+}
+
+span.ranking_tag{
+  font-size:10px;
+  font-weight:bold;
+  color:#fff;
+  padding:3px;
+}
+
+span.webdesign{
+  background-color:#f6ac4d;
+}
+span.wordpress{
+  background-color:#e18c7c;
+}
+span.webmarketing{
+  background-color:#acd598;
+}
+
+
+
+/* ========================================
+	サイド　レフト用
+========================================= */
+#top_left{
+  width:280px;
+  height:auto;
+  float: left;
+  margin-top:30px;
+}
+
+#top_left #top_category{
+  width:240px;
+  height:auto;
+  border:10px solid #dcdddf;
+  padding:10px;
+}
+
+#top_left #top_category h3{
+  font-size:18px;
+  background:url(images/category_icon.png) no-repeat left 8px;
+  border-bottom:1px dotted #dcdddf;
+  padding-left:25px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+#top_left #top_category ul li{
+  font-size:13px;
+  margin-bottom:19px;
+  line-height:1;
+}
+#top_left #top_category ul li:last-child{
+  margin-bottom:0px;
+}
+
+
+#top_left #top_ad{
+  margin-top:30px;
+}
+
+/* ========================================
+	サイド　ライト用
+========================================= */  
+#top_right{
+  width:650px;
+  height:auto;
+  float: right;
+  margin-top:30px;
+
+}
+#top_right h3{
+  font-size:22px;
+  font-weight:bold;
+  background:url(images/new_icon.png) no-repeat left center;
+  padding-left:30px;
+}
+
+#top_right ul#post_list li{
+  width:650px;
+  height:152px;
+  background-color:#fff;
+  border:1px solid #dcdddf;
+  margin-bottom:30px;
+}
+
+
+#top_right ul#post_list li dl dt{
+  width:247px;
+  height:152px;
+  margin-right:20px;
+  float:left;
+  position: relative;
+}
+
+span.new_category_tag{
+  font-weight: bold;
+  color:#fff;
+  padding:0 10px;
+  height:34px;
+  line-height:34px;
+  position: absolute;
+  top:0;
+  right:0;
+  font-size:14px;
+  border:1px solid #fff;
+  display:inline-block;
+}
+#top_right ul#post_list li dl span.webdesign{
+  background-color:rgba(246,172,77,0.9);
+}
+
+#top_right ul#post_list li dl span.wordpress{
+  background-color:rgba(236, 82, 22, 0.9);
+}
+#top_right ul#post_list li dl span.webmarketing{
+  background-color:rgba(65, 236, 22, 0.9);
+}
+
+
+#top_right ul#post_list li dl dd{
+  width:340px;
+  height:auto;
+  float:left;
+  padding:20px 20px 0 0;
+}
+
+#top_right ul#post_list li dl dd h4 a{
+  font-size:16px;
+  font-weight:bold;
+}
+#top_right ul#post_list li dl dd span{
+  font-size:12px;
+  font-weight:bold;
+  color:#dcdddf;
+}
+#top_right ul#post_list li dl dd .new_date{
+  font-size:12px;
+  font-weight:bold;
+  color:#dcdddf;
+  background: url(images/new_date.png) no-repeat left center;
+  padding-left:18px;
+}
+#top_right ul#post_list li dl dd .new_tag{
+  font-size:12px;
+  font-weight:bold;
+  color:#dcdddf;
+  background: url(images/tag.png) no-repeat left center;
+  padding-left:18px;
+  margin-left:18px;
+}
+#top_right ul#post_list li dl dd p{
+  font-size:13px;
+  line-height:21px;
+  margin-top:10px;
+}
+
+#top_right ul#post_list li dl dd p a{
+  color:#f6ac4d;
+  text-decoration: underline;
+}
+
+#top_right #pagination {
+  width:auto;
+  height:34px;
+  float:right;
+}
+#top_right #pagination li{
+  width:auto;
+  height:32px;
+  background-color:#fff;
+  border:1px solid #dcdddf;
+  float:left;
+  margin-left:10px;
+}
+
+#top_right #pagination li a{
+  font-size:16px;
+  font-weight:bold;
+  padding:0 8px;
+  line-height:32px;
+  display:block;
+}
+
+
+
+
+/* ========================================
+	フッター用
+========================================= */
+footer{
+  width:100%;
+  height:140px;
+  border-top:1px solid #dcdddf;
+  padding:20px 0;
+  margin-top:60px;
+}
+
+#footer_inner{
+  width:960px;
+  height:auto;
+  margin:0 auto;
+}
+#footer_inner dl{
+  float:left;
+}
+#footer_inner dt{
+  width:218px;
+  height:52px;
+}
+
+#footer_inner dd{
+  font-size:12px;
+  line-height:20px;
+  margin-top:20px;
+}
+
+#contact{
+  float:right;
+  width:374px;
+  height:auto;
+}
+
+#contact h4{
+  font-size:16px;
+  font-weight:bold;
+}
+#contact h4 span{
+  font-size:12px;
+}
+
+#contact textarea{
+  width:372px;
+  height:35px;
+  margin:10px 0;
+  border:1px solid #dcdddf;
+}
+#contact input{
+  width:125px;
+  height:35px;
+  border:none;
+  color:#fff;
+  float:right;
+  background-color:#7e7e7e;
+  font-weight:bold;
+}
+#contact input:hover{
+  cursor: pointer;
+  opacity:0.8;
+}
+
+
+/* ========================================
+	２ページ目用
+========================================= */
+
+
+/* ========================================
+  ３ページ目用
+========================================= */
+
+
